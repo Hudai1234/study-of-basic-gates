@@ -1,5 +1,3 @@
-### study-of-basic-gates
-
 **AIM:** 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
@@ -50,30 +48,46 @@ The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will gi
 Y= A⊕B
 
 **Procedure** 
-
+```
 1.	Type the program in Quartus software.
-
 2.	Compile and run the program.
-
 3.	Generate the RTL schematic and save the logic diagram.
-
 4.	Create nodes for inputs and outputs to generate the timing diagram.
-
 5.	For different input combinations generate the timing diagram.
-
+```
 
 **PROGRAM**
-
-Program for logic gates and verify its truth table in quartus using Verilog programming
-
- Developed by: RegisterNumber: 
+```
+ Developed by: T.Hudaifa mahzumia
+ RegisterNumber: 212224040119
+```
+```
+module DEEXP1(a,b,f1,f2,f3,f4,f5,f6,f7);
+input a,b;
+output f1,f2,f3,f4,f5,f6,f7;
+assign f1=a&b;
+assign f2=a|b;
+assign f3=~a;
+assign f4=~f1;
+assign f5=~f2;
+assign f6=a^b;
+assign f7=~(a^b);
+endmodule
+```
  
 **Logic symbol & Truthtable**
 
+![image](https://github.com/user-attachments/assets/e62e6f6e-990c-49ab-88f7-a1032b66807e)
+
+
 **RTL realization Output:** 
+![image](https://github.com/user-attachments/assets/21e64492-1a4e-4133-b7ac-822aa6119e9b)
+
 
 **RTL**
+![image](https://github.com/user-attachments/assets/5e5fcb39-9a23-42c2-835d-ced666bf604d)
+
 
 **Result:**
 
-
+Thus the truth table of logic gates in Quartus II using verilog programming is verified.
